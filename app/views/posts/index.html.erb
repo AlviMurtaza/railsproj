@@ -1,2 +1,17 @@
 <h1>Welcome to the Video App</h1>
 <p>This App will Rock</p>
+
+<%= form_for Post.new do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <br>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+    <br>
+    <%= f.submit %>
+<% end %>
+<ul>
+    <% for post in @posts %>
+        <li><%= post.post %></li>
+    <% end %>
+</ul>
