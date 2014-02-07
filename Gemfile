@@ -38,7 +38,7 @@ group :test, :development do
     gem 'rspec-rails'
     gem 'capybara'      # Simulates the User
     gem 'guard-rspec'   # Automatically Run Test
-    gem 'growl_notify'  # For Mac, will show a growl notification on top
+   #  gem 'growl_notify'  # For Mac, will show a growl notification on top
 end
 
 # Use ActiveModel has_secure_password
